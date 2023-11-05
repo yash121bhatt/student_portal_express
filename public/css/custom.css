@@ -1,0 +1,28 @@
+img.d-block.w-100 {
+    max-height: 500px;
+    height: auto;
+}
+
+.A{
+    text-align: center;
+}
+
+a.btn.btn-primary.A {
+    margin-left: 81px;
+}
+
+form.center {
+    text-align: -webkit-center;
+}
+
+img.me-3 {
+    border-radius: 50px;
+}
+
+img.logo {
+    border-radius: 50px;
+}
+
+/* .footer.page-footer.font-small.pt-4.mt-5 {
+    background: #35b9dd;
+} */

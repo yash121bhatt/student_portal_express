@@ -1,0 +1,62 @@
+<%- include('header') %>
+    <%- include('navbar') %>
+        <div class="container" style="margin-top: 110px;">
+
+            <table class="table table-border">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Course</th>
+                    <th>Comment</th>
+                    <th>Action</th>
+                </tr>
+                <% d.forEach((item)=>{ %>
+
+                    <tr>
+                        <td>
+                            <%=item._id%>
+                        </td>
+                        <td>
+                            <%=item.name%>
+                        </td>
+                        <td>
+                            <%=item.email%>
+                        </td>
+                        <td>
+                            <%=item.phone%>
+                        </td>
+                        <td>
+                            <%=item.city%>
+                        </td>
+                        <td>
+                            <%=item.address%>
+                        </td>
+                        <td>
+                            <%=item.course%>
+                        </td>
+                        <td>
+                            <%=item.comment%>
+                        </td>
+                        <!-- <td>
+                            <%=item.createdAt%>
+                        </td>
+                        <td>
+                            <%=item.updatedAt%>
+                        </td> -->
+                        <td>
+                            <a href="/courseView/<%=item._id%>" class="btn btn-primary">View</a>
+                            <a href="courseEdit/<%=item._id%>" class="btn btn-info">Edit</a>
+                            <a href="courseDelete/<%=item._id%>" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                    <% }) %>
+
+            </table>
+
+        </div>
+        <%- include('footer') %>
+            <%- include('script') %>

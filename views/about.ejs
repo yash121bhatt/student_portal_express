@@ -1,0 +1,77 @@
+<%- include('header') %>
+<body style="height:auto;">
+    
+    <section>
+
+        <div class="col-md-12">
+             
+          <%- include('navbar') %>
+                 
+                <div class="container-fluid" style="border-radius: 3rem; margin-top: 80px;">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/aboutus.jpg" style="border-radius: 3rem;" class="d-block w-100 mt-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/office.png" style="border-radius: 3rem;" class="d-block w-100 mt-3" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/office1.png" style="border-radius: 3rem;" class="d-block w-100 mt-3" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mt-5" style="text-align: center;">
+            
+                  <h1>Ower Team <span style="color: #35b9dd;"> Yash Software Solution</span> </h1>
+      
+                </div>
+                
+                <div class="container mt-5">
+                  <div class="row">
+                      
+                    <div class="col-md-2"></div>
+                      <div class="col-md-4" data-aos="flip-left">
+                        <div class="card" style="width: 18rem; border-radius: 2rem">
+                          <img class="card-img-top" src="image/yash2.jpg" style="width: 60%; margin-top: 21px; border-radius: 16px;  margin-left:55px" alt="Card image cap">
+                          <div class="card-body">
+                          <h5 class="card-title A" style="text-align: center;">Yash Bhatt</h5>
+                          <p class="card-text A" style="text-align: center;">Co-Founder/CEO</p>
+                          <!-- <a href="/" class="btn btn-primary A">Register</a> -->
+                         </div>
+                         </div>
+                      </div>
+                      <div class="col-6 col-md-4" data-aos="flip-left">
+                        <div class="card" style="width: 18rem; border-radius: 2rem">
+                          <img class="card-img-top" src="image/rohit2.jpg" style="width: 60%; margin-top: 21px; border-radius: 16px; margin-left:55px" alt="Card image cap">
+                          <div class="card-body">
+                          <h5 class="card-title A" style="text-align: center;">R.K. Mahor </h5>
+                          <p class="card-text A" style="text-align: center;" >Co-Founder/CTO</p>
+                          <!-- <a href="/" class="btn btn-primary A">CTO</a> -->
+                         </div>
+                        </div>
+                         </div>
+                         <div class="col-md-2"></div>
+                      </div>
+                  </div>
+
+                  <%- include('footer') %>
+
+        </div>
+
+    </section>
+
+
+</body>
+<%- include('script') %>
+</html>

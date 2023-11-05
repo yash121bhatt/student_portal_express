@@ -1,0 +1,47 @@
+<%- include('header') %>
+    <%- include('navbar') %>
+        <div class="container" style="margin-top: 110px;">
+
+            <table class="table table-border">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Course</th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <%=d._id%>
+                    </td>
+                    <td>
+                        <%=d.name%>
+                    </td>
+                    <td>
+                        <%=d.email%>
+                    </td>
+                    <td>
+                        <%=d.phone%>
+                    </td>
+                    <td>
+                        <%=d.city%>
+                    </td>
+                    <td>
+                        <%=d.address%>
+                    </td>
+                    <td>
+                        <%=d.course%>
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </div>
+        <%- include('footer') %>
+            <%- include('script') %>
