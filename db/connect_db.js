@@ -6,8 +6,8 @@ const local_url ='mongodb://127.0.0.1:27017/admissionPortal'
 
 
 const connect_db = () =>{
-    // return mongoose.connect('mongodb://127.0.0.1:27017/admissionPortal')
-    return mongoose.connect(liveUrl)
+    //  return mongoose.connect('mongodb://127.0.0.1:27017/admissionPortal')
+     return mongoose.connect(liveUrl)
     .then(()=>{
         console.log("Connected Succeessfully")
     })
